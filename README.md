@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Vendas - Página Única</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Loja de Vendas</h1>
+    <nav>
+        <a href="#inicio">Home</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato / Pedido</a>
+    </nav>
+</header>
+
+<!-- Seção Home -->
+<section id="inicio">
+    <h2>Bem-vindo à Loja de Vendas</h2>
+    <p>Confira nossos produtos e faça seu pedido com facilidade!</p>
+</section>
+
+<!-- Seção Produtos -->
+<section id="produtos">
+    <h2>Produtos Disponíveis</h2>
+    <ul>
+        <li>Smartphone XYZ - R$ 1.500,00</li>
+        <li>Notebook ABC - R$ 3.200,00</li>
+        <li>TV LED 42" - R$ 2.000,00</li>
+        <li>Fone de Ouvido Bluetooth - R$ 200,00</li>
+    </ul>
+</section>
+
+<!-- Seção Contato/Pedido -->
+<section id="contato">
+    <h2>Faça seu Pedido</h2>
+    <form action="#" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Produto desejado:</label>
+        <input type="text" name="produto" required>
+
+        <label>Quantidade:</label>
+        <input type="number" name="quantidade" required>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</section>
+
+</body>
+</html>
